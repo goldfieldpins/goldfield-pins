@@ -7,7 +7,7 @@
   --gold:#b4935a;
   --line:#cdbd9d;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif;line-height:1.6}
 img{max-width:100%;display:block}
 a{color:inherit}
@@ -53,6 +53,8 @@ footer p{font-size:.8rem;margin-top:18px}
 .policy h2{font-size:1.6rem;margin-top:34px}
 .back-link{display:inline-block;margin-bottom:28px;font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.08em}
 @media(max-width:760px){
+  html{scroll-padding-top:72px}
+  .section{scroll-margin-top:72px}
   .site-header{align-items:flex-start}
   nav{display:none}
   .brand img{width:160px}
@@ -61,3 +63,5 @@ footer p{font-size:.8rem;margin-top:18px}
   .section{padding:64px 22px}
   .hero{min-height:66vh}
 }
+
+.section{scroll-margin-top:90px}
