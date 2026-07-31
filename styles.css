@@ -7,7 +7,7 @@
   --gold:#b4935a;
   --line:#cdbd9d;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,serif;line-height:1.6}
 img{max-width:100%;display:block}
 a{color:inherit}
@@ -63,3 +63,16 @@ footer p{font-size:.8rem;margin-top:18px}
 }
 
 .product-image img{width:100%;display:block;border:1px solid var(--line);border-radius:6px;}
+
+#shop,
+#story,
+#gallery,
+#contact{scroll-margin-top:78px}
+
+@media(max-width:760px){
+  html{scroll-padding-top:62px}
+  #shop,
+  #story,
+  #gallery,
+  #contact{scroll-margin-top:62px}
+}
